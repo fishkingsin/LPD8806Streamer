@@ -1,12 +1,15 @@
 LPD8806Streamer
 ===============
 
-build with openframeworks + addons ofxLEDs and arduino SPI bridge test with 64 LEDs
+build with openframeworks + addons ofxLEDs and arduino SPI bridge test with 64 LEDs]
+# Wiring #
+
 ![wiring](http://i.imgur.com/WPyWS.jpg)
 
+# Video #
 ![video][https://vimeo.com/54499657]
 
-!Example
+# Example #
 ```c++
 	led->clear(0); //clear the previous frame
 	led->clear(ofColor::black); 
@@ -24,3 +27,8 @@ build with openframeworks + addons ofxLEDs and arduino SPI bridge test with 64 L
 	serial.writeBytes((unsigned char*)led->txBuffer.data(), led->txBuffer.size());
 
 ``` 
+
+## Last but not least ##
+I am try to find out how many led can the code support 
+please give me feed back when you have any problem and suggestion
+many thanks
