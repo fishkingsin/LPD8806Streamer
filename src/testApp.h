@@ -22,6 +22,8 @@ class testApp : public ofBaseApp{
 	ofxLEDsLPD8806 *led;
 
 	ofVideoPlayer player;
+	ofVideoGrabber grabber;
 	ofSerial serial;
-	
+	void drawGraphic();
+	int mode;
 };
