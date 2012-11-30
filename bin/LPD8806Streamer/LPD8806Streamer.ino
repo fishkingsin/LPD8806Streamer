@@ -1,8 +1,8 @@
 #include <SPI.h>
--// conect LPD8806 DI to pin 11(MOSI) 
--// conect LPD8806 CI to pin 13(SCLK)
--//separate power connect GND together
--//5V to LPD8806
+// conect LPD8806 DI to pin 11(MOSI) 
+// conect LPD8806 CI to pin 13(SCLK)
+//separate power connect GND together
+//5V to LPD8806
 void setup() {
   int c;
   Serial.begin(115200); // 32u4 ignores BPS, runs full speed
