@@ -1,7 +1,7 @@
 #include "testApp.h"
 float pos_x = 0;
-int row = 1;
-int col = 64;
+int row = 8;
+int col = 8;
 int numLED = col*row;
 int SQAURE_ROOT =int(sqrt((float)col));
 float ptSize = 5;
@@ -20,7 +20,7 @@ void testApp::setup(){
 	ofSetFrameRate(25);
 	
 	serial.listDevices();
-	serial.setup(serial.getDeviceList()[0].getDeviceName(), 115200);
+	serial.setup(serial.getDeviceList()[5].getDeviceName(), 230400);
 	
 	ofSetLogLevel(OF_LOG_NOTICE);
 	mode = 1;
@@ -55,30 +55,49 @@ void testApp::drawGraphic()
 {
 	switch(mode)
 	{
-		case 1:
-			for(int i = 0 ; i < SQAURE_ROOT ; i++)
+		case 0:
+		{
+			ofPushStyle();
+			ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+			
+			for(int i = 0 ; i < 1; i++)
 			{
-				player.draw(i*SQAURE_ROOT,-i, SQAURE_ROOT, SQAURE_ROOT);
+				ofSetColor(ofColor::fromHsb(i%360, 255, 255),200);
+				ofCircle(int(pos_x+i*(SQAURE_ROOT)-16)%numLED, 0, SQAURE_ROOT*0.2);
+			}
+			ofDisableBlendMode();
+			ofPopStyle();
+		}break;
+		case 1:
+			for(int i = 0 ; i < col ; i++)
+			{
+				//for(int j = 0 ; j < row ; j++)
+				{
+					player.draw(i*col,-i, col, row);
+				}
 			}
 			break;
 		case 2:
 		{
 			ofPushStyle();
 			ofEnableBlendMode(OF_BLENDMODE_ALPHA);
-			int step = 360.0/SQAURE_ROOT;
-			for(int i = 0 ; i < 1 ; i++)
+			int step = 360.0/10;
+			for(int i = 0 ; i < numLED; i++)
 			{
 				ofSetColor(ofColor::fromHsb((i*step)%360, 255, 255),200);
-				ofCircle(int(pos_x+i*(SQAURE_ROOT)-16)%numLED, 0, SQAURE_ROOT*0.5);
+				ofCircle(int(pos_x+i*(16*0.4))%numLED, 0, 16*0.25);
 			}
 			ofDisableBlendMode();
 			ofPopStyle();
 		}
 			break;
 			case 3 :
-			for(int i = 0 ; i < SQAURE_ROOT ; i++)
+			for(int i = 0 ; i < col ; i++)
 			{
-				grabber.draw(i*SQAURE_ROOT,-i, SQAURE_ROOT, SQAURE_ROOT);
+				//for(int j = 0 ; j < row ; j++)
+				{
+					grabber.draw(i*col,-i, col, row);
+				}
 			}
 
 			break;
