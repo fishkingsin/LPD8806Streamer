@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\testApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\testApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxLEDs\src\ofxLEDs1dAbstraction.cpp">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxLEDs\src\ofxLEDs2dAbstraction.cpp">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxLEDs\src\ofxLEDsAbstraction.cpp">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxLEDs\src\ofxLEDsImplementation.cpp">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxLEDs\src\ofxLEDsLPD8806.cpp">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834f65-f3a9-211e-73b8-dc8563776aec}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxLEDs">
+			<UniqueIdentifier>{928b33eb-1393-3b77-9a22-9cf1cd243f0c}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxLEDs\src">
+			<UniqueIdentifier>{126426b7-8097-0fc8-371f-f5fc83fecabc}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\testApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\testApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxLEDs\src\ofxLEDs1dAbstraction.h">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxLEDs\src\ofxLEDs2dAbstraction.h">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxLEDs\src\ofxLEDsAbstraction.h">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxLEDs\src\ofxLEDsImplementation.h">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxLEDs\src\ofxLEDsLPD8806.h">
+			<Filter>addons\ofxLEDs\src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

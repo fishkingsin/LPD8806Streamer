@@ -3,7 +3,7 @@ float pos_x = 0;
 int row = 1;
 int col = 64;
 int numLED = col*row;
-int SQAURE_ROOT =int(sqrt(col));
+int SQAURE_ROOT =int(sqrt((float)col));
 float ptSize = 5;
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -20,7 +20,7 @@ void testApp::setup(){
 	ofSetFrameRate(25);
 	
 	serial.listDevices();
-	serial.setup(serial.getDeviceList()[5].getDeviceName(), 115200);
+	serial.setup(serial.getDeviceList()[0].getDeviceName(), 115200);
 	
 	ofSetLogLevel(OF_LOG_NOTICE);
 	mode = 1;

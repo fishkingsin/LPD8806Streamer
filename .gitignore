@@ -62,3 +62,9 @@ Desktop.ini
 
 # Miscellaneous
 .mailmap
+
+win32 ignore
+*.dll
+*.exe
+*.exp
+*.lib
