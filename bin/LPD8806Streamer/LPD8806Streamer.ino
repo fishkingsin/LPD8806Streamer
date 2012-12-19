@@ -15,7 +15,7 @@ void setup() {
   // dont knoe the consequence
   // everything under testing
   //Caution !!!!
-  Serial.begin(115200); // 32u4 ignores BPS, runs full speed
+  Serial.begin(230400); // 32u4 ignores BPS, runs full speed
   // SPI is run at 2 MHz. LPD8806 can run much faster,
   // but unshielded wiring is susceptible to interference.
   // Feel free to experiment with other divider ratios.
