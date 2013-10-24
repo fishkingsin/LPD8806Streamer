@@ -32,3 +32,6 @@ build with openframeworks + addons ofxLEDs and arduino SPI bridge test with 64 L
 I am try to find out how many led can the code support 
 please give me feed back when you have any problem and suggestion
 many thanks
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fishkingsin/lpd8806streamer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
